@@ -51,7 +51,6 @@ function Row({
         setOver(false);
         onDropAt(at);
       }}
-      onDoubleClick={() => jumpTo(at)}
     >
       <div className="relative size-10">
         <Artwork src={track.thumbnail} displayWidth={40} radius="var(--radius-artwork-small)" />
