@@ -115,7 +115,6 @@ export function TrackMenu({ track, className }: { track: Track; className?: stri
           event.stopPropagation();
           setAnchor(anchor ? null : event.currentTarget);
         }}
-        onDoubleClick={(event) => event.stopPropagation()}
       >
         <MoreHorizontal size={18} strokeWidth={2} />
       </button>
