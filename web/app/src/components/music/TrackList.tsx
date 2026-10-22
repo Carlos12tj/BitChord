@@ -105,9 +105,8 @@ function Row({ track, variant, position, fallbackArtwork, onPlayRow }: RowProps)
       data-variant={variant}
       data-current={current || undefined}
       data-unavailable={unavailable}
-      title={unavailable === 'matching' ? 'Looking for this on YouTube Music…' : unavailable === 'missing' ? 'Not found on YouTube Music' : undefined}
-      onDoubleClick={onPlay}
-    >
+      title={unavailable === 'matching' ? 'Looking for this on YouTube Music…' : unavailable === 'missing' ? 'Not found on YouTube Music' : undefined
+          >    >    >
       <div className={`${cell} gap-3`}>
         <div className={`relative grid w-10 shrink-0 place-items-center${variant === 'playlist' ? ' ms-[7px]' : ''}`}>
           {variant === 'playlist' ? (
